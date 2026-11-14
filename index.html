@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#DFF0F7">
+
+  <title>Arya Dinar — Gold Medal | HAS Digital Medal Vault</title>
+  <meta name="description" content="Official personal digital medal vault for Arya Dinar: Gold Medal in 50m Freestyle (00:28.42), Harare Amateur Swimming (HAS) 2026–2027 Season.">
+  <meta property="og:title" content="Arya Dinar — Gold Medal | HAS Digital Medal Vault">
+  <meta property="og:description" content="Arya Dinar · 50m Freestyle Gold Medal · 00:28.42 · Harare Amateur Swimming (HAS) 2026–2027 Season.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Inter:wght@500;600;700;800;900&family=Playfair+Display:wght@700;800&family=Roboto+Mono:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-body is-landing">
+
+  <!-- =====================================================================
+       LANDING SCREEN — SUNLIT AQUATIC PHYSICAL MEDAL PRESENTATION
+       ===================================================================== -->
+  <div class="aquatic-stage" aria-hidden="true">
+    <div class="aquatic-sunlight-wash"></div>
+    <canvas id="landing-caustics-canvas" class="water-caustics-canvas"></canvas>
+    <div class="aquatic-surface-shimmer"></div>
+  </div>
+
+  <section class="landing-screen" id="landing-screen" aria-label="Arya Dinar Gold Medal Entrance">
+    <div class="medal-hero-stage" id="medal-stage" role="region" aria-label="Arya Dinar's Physical Gold Medal">
+      <div class="medal-card-3d" id="medal-card">
+        <div class="medal-pointer-layer" id="medal-pointer-layer">
+          <div class="medal-face">
+            <img src="assets/images/has-gold-medal.svg"
+                 alt="Official Harare Amateur Swimming Gold Medal awarded to Arya Dinar"
+                 class="medal-svg-graphic"
+                 loading="eager"
+                 decoding="async"
+                 width="360"
+                 height="432">
+
+            <div class="medal-reflective-sheen" aria-hidden="true"></div>
+
+            <div class="specular-glint-track" aria-hidden="true">
+              <div class="specular-light-sweep"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="medal-water-shadow" aria-hidden="true"></div>
+    </div>
+
+    <div class="landing-identity">
+      <div class="reveal-item" id="item-athlete">
+        <h1 class="athlete-name">ARYA DINAR</h1>
+      </div>
+
+      <div class="reveal-item gold-medal-label" id="item-tier">
+        <span class="gold-label-rule" aria-hidden="true"></span>
+        <span class="gold-label-text">GOLD MEDAL</span>
+        <span class="gold-label-rule rule-right" aria-hidden="true"></span>
+      </div>
+
+      <div class="reveal-item org-lockup" id="item-org">
+        <div class="org-name">HARARE AMATEUR SWIMMING (HAS)</div>
+        <div class="org-season">2026–2027 SEASON</div>
+      </div>
+    </div>
+
+    <div class="reveal-item cta-action-wrap" id="item-cta">
+      <a href="#home"
+         class="btn-enter-medal"
+         id="btn-enter"
+         aria-label="Enter Arya Dinar's personal digital medal vault">
+        <span class="btn-sheen" aria-hidden="true"></span>
+        <span>ENTER MY MEDAL</span>
+        <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       PERSONAL DIGITAL MEDAL VAULT (HOME · RACE · MOMENTS · MY MEDAL)
+       ===================================================================== -->
+  <div class="vault-ambient" aria-hidden="true">
+    <canvas class="vault-water-caustics" id="vault-caustics-canvas"></canvas>
+    <div class="vault-water-horizon"></div>
+  </div>
+
+  <div class="vault-shell" id="vault-shell">
+    <!-- Minimal Sticky Header -->
+    <header class="vault-header" role="banner">
+      <div class="vault-header-inner">
+        <span class="vault-header-athlete">ARYA DINAR</span>
+      </div>
+    </header>
+
+    <main class="vault-main" role="main">
+
+      <!-- 1. HOME -->
+      <section class="vault-view is-active" id="view-home" data-view="home" aria-label="Home">
+        <div class="home-stage">
+          <div class="home-org-lockup">
+            <div class="home-org-name">HARARE AMATEUR SWIMMING (HAS)</div>
+            <div class="home-org-season">2026–2027 SEASON</div>
+          </div>
+
+          <div class="home-visual-stack">
+            <div class="home-medal-visual">
+              <div class="home-medal-halo" aria-hidden="true"></div>
+              <img src="assets/images/has-gold-medal.svg"
+                   alt="Official Harare Amateur Swimming Gold Medal awarded to Arya Dinar"
+                   class="home-medal-img"
+                   width="220"
+                   height="264">
+            </div>
+
+            <figure class="home-portrait-frame" id="home-portrait-frame">
+              <img src="https://pub-151ed170a5754076bd5f6acdb5f96429.r2.dev/schools%20swimming/HAS_2026-2027_swimming_memories_webp/arya-home-portrait.webp"
+                   alt="Arya Dinar wearing her Harare Amateur Swimming cap and Gold Medal"
+                   class="home-portrait-img"
+                   id="home-portrait-img"
+                   width="1086"
+                   height="876"
+                   loading="eager"
+                   decoding="async"
+                   fetchpriority="high">
+            </figure>
+          </div>
+
+          <div class="home-identity">
+            <h2 class="home-athlete-name">ARYA DINAR</h2>
+            <div class="home-gold-badge">
+              <span class="home-gold-rule" aria-hidden="true"></span>
+              <span class="home-gold-text">GOLD MEDAL</span>
+              <span class="home-gold-rule" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <p class="home-headline">
+            One race. One achievement. A memory that stays.
+          </p>
+
+          <div class="home-summary-strip" aria-label="Achievement Highlights">
+            <div class="summary-item">
+              <span class="summary-value is-gold">GOLD MEDAL</span>
+              <span class="summary-label">Award</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-value">50M FREESTYLE</span>
+              <span class="summary-label">Event</span>
+            </div>
+            <div class="summary-item is-featured-time">
+              <span class="summary-value is-mono">00:28.42</span>
+              <span class="summary-label">Official Time</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-value is-gold">1ST PLACE</span>
+              <span class="summary-label">Position</span>
+            </div>
+          </div>
+
+          <div class="home-actions">
+            <button type="button" class="btn-aquatic-primary" data-navigate="race">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <polygon points="6 4 20 12 6 20 6 4"></polygon>
+              </svg>
+              <span>WATCH MY RACE</span>
+            </button>
+
+            <button type="button" class="btn-aquatic-secondary" data-navigate="moments">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>EXPLORE MY MOMENTS</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. RACE -->
+      <section class="vault-view" id="view-race" data-view="race" aria-label="Race">
+        <div class="race-stage">
+          <header class="race-header">
+            <div class="race-athlete">ARYA DINAR</div>
+            <h2 class="race-title">50M FREESTYLE FINAL</h2>
+            <div class="race-org">HARARE AMATEUR SWIMMING</div>
+            <div class="race-season">2026–2027 SEASON</div>
+          </header>
+
+          <div class="race-player-card">
+            <div class="race-video-frame" id="race-video-frame">
+              <video id="race-video-player"
+                     class="race-video-element"
+                     controls
+                     playsinline
+                     webkit-playsinline
+                     preload="metadata"
+                     aria-label="Arya Dinar 50m Freestyle Final official race video">
+                <source src="https://pub-151ed170a5754076bd5f6acdb5f96429.r2.dev/schools%20swimming/7%20year%20old%2050m%20freestyle.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="race-result-compact" aria-label="Official race result">
+            <div class="race-result-award">GOLD MEDAL · 1ST PLACE</div>
+            <div class="race-result-timing">
+              <span class="race-result-label">OFFICIAL TIME</span>
+              <span class="race-result-time">00:28.42</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. MOMENTS (WINNER-FIRST VISUAL ACHIEVEMENT STORY) -->
+      <section class="vault-view" id="view-moments" data-view="moments" aria-label="Moments">
+        <div class="moments-story" id="moments-story-container"></div>
+      </section>
+
+      <!-- 4. MY MEDAL (FORMAL DIGITAL CERTIFICATE OF ACHIEVEMENT) -->
+      <section class="vault-view" id="view-my-medal" data-view="my-medal" aria-label="My Medal">
+        <div class="cert-stage">
+          <article class="formal-certificate" id="formal-certificate" aria-label="Official Digital Certificate of Achievement">
+            <div class="cert-inner-frame">
+              <span class="cert-corner corner-tl" aria-hidden="true"></span>
+              <span class="cert-corner corner-tr" aria-hidden="true"></span>
+              <span class="cert-corner corner-bl" aria-hidden="true"></span>
+              <span class="cert-corner corner-br" aria-hidden="true"></span>
+
+              <header class="cert-masthead">
+                <div class="cert-crest-emblem">
+                  <img src="assets/images/has-gold-medal.svg"
+                       alt="Official Harare Amateur Swimming Gold Medal emblem"
+                       width="96"
+                       height="115">
+                </div>
+                <div class="cert-org-name">HARARE AMATEUR SWIMMING (HAS)</div>
+                <h2 class="cert-heading">CERTIFICATE OF ACHIEVEMENT</h2>
+                <div class="cert-ornament" aria-hidden="true">
+                  <span class="cert-ornament-line"></span>
+                  <span class="cert-ornament-diamond"></span>
+                  <span class="cert-ornament-line"></span>
+                </div>
+              </header>
+
+              <div class="cert-proclamation">
+                <p class="cert-presented-to">Presented to</p>
+                <h3 class="cert-recipient">ARYA DINAR</h3>
+
+                <div class="cert-distinction">
+                  <div class="cert-award-tier">GOLD MEDAL</div>
+                  <div class="cert-event-line">
+                    <span>50M FREESTYLE</span>
+                    <span class="cert-dot" aria-hidden="true">·</span>
+                    <span>FIRST PLACE</span>
+                  </div>
+                </div>
+
+                <div class="cert-time-callout">
+                  <span class="cert-time-label">OFFICIAL TIME</span>
+                  <span class="cert-time-value">00:28.42</span>
+                  <span class="cert-season-label">2026–2027 SEASON</span>
+                </div>
+              </div>
+
+              <div class="cert-section-rule" aria-hidden="true"></div>
+
+              <section class="cert-details-section" aria-label="Official Achievement Details">
+                <h4 class="cert-details-heading">OFFICIAL ACHIEVEMENT DETAILS</h4>
+
+                <dl class="cert-details-grid">
+                  <div class="cert-detail-item is-wide">
+                    <dt>Competition</dt>
+                    <dd>Harare Amateur Swimming Championships</dd>
+                  </div>
+                  <div class="cert-detail-item">
+                    <dt>Date</dt>
+                    <dd>15 August 2026</dd>
+                  </div>
+                  <div class="cert-detail-item">
+                    <dt>Club</dt>
+                    <dd>Harare Aquatics Club</dd>
+                  </div>
+                  <div class="cert-detail-item is-wide">
+                    <dt>Venue</dt>
+                    <dd>Harare International School Aquatic Centre</dd>
+                  </div>
+                  <div class="cert-detail-item">
+                    <dt>Age Group</dt>
+                    <dd>Under 18</dd>
+                  </div>
+                  <div class="cert-detail-item">
+                    <dt>Round</dt>
+                    <dd>Final</dd>
+                  </div>
+                  <div class="cert-detail-item">
+                    <dt>Heat</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div class="cert-detail-item">
+                    <dt>Lane</dt>
+                    <dd>4</dd>
+                  </div>
+                </dl>
+              </section>
+
+              <footer class="cert-footer">
+                <div class="cert-footer-identity">
+                  <div class="cert-record-id">
+                    <span class="cert-record-label">Certificate / Digital Record ID:</span>
+                    <span class="cert-record-code">HAS-2026-0001</span>
+                  </div>
+                  <p class="cert-qr-caption">
+                    The permanent QR code engraved on the reverse of Arya's physical gold medal links directly to this digital record.
+                  </p>
+                </div>
+
+                <button type="button"
+                        class="cert-reverse-seal"
+                        id="btn-seal-inspect"
+                        aria-label="Inspect physical medal reverse and QR code">
+                  <span class="cert-reverse-seal-clip">
+                    <img src="assets/images/has-gold-medal-reverse.svg"
+                         alt="Official Harare Amateur Swimming Gold Medal reverse with engraved QR code">
+                  </span>
+                </button>
+              </footer>
+            </div>
+          </article>
+
+          <div class="cert-actions-bar">
+            <button type="button" class="btn-cert-discreet is-primary" id="btn-share-certificate">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+              <span>SHARE CERTIFICATE</span>
+            </button>
+
+            <button type="button" class="btn-cert-discreet" id="btn-verify-record">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              <span>VERIFY RECORD</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FIXED 4-ITEM BOTTOM NAVIGATION (HOME · RACE · MOMENTS · MY MEDAL) -->
+  <nav class="vault-bottom-nav" aria-label="Personal medal vault navigation">
+    <div class="vault-bottom-nav-inner" style="--active-index: 0;">
+      <span class="nav-active-indicator" aria-hidden="true"></span>
+
+      <button type="button" class="nav-dest-btn is-active" data-view-target="home" aria-current="page">
+        <svg class="nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5.5v-6h-5v6H4a1 1 0 0 1-1-1v-9.5z"></path>
+        </svg>
+        <span class="nav-label">HOME</span>
+      </button>
+
+      <button type="button" class="nav-dest-btn" data-view-target="race">
+        <svg class="nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9.5"></circle>
+          <polygon points="10.2 8.4 16.2 12 10.2 15.6" fill="currentColor" stroke="none"></polygon>
+        </svg>
+        <span class="nav-label">RACE</span>
+      </button>
+
+      <button type="button" class="nav-dest-btn" data-view-target="moments">
+        <svg class="nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="16" rx="2.5"></rect>
+          <circle cx="8.5" cy="9.5" r="1.5"></circle>
+          <polyline points="21 15.5 15.8 10.5 6.5 20"></polyline>
+        </svg>
+        <span class="nav-label">MOMENTS</span>
+      </button>
+
+      <button type="button" class="nav-dest-btn" data-view-target="my-medal">
+        <svg class="nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8.5 3h7l-2.1 5.2h-2.8L8.5 3z"></path>
+          <circle cx="12" cy="14.5" r="6"></circle>
+          <circle cx="12" cy="14.5" r="2.6"></circle>
+        </svg>
+        <span class="nav-label">MY MEDAL</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- FULL-SCREEN PHOTO LIGHTBOX -->
+  <div class="photo-lightbox" id="photo-lightbox" role="dialog" aria-modal="true" aria-label="Full screen photograph">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close photograph">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <div class="lightbox-stage">
+      <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    </div>
+
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+
+    <div class="lightbox-controls" id="lightbox-controls">
+      <button type="button" class="lightbox-nav-btn" id="lightbox-prev" aria-label="Previous photograph">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <span class="lightbox-counter" id="lightbox-counter" aria-live="polite">1 / 11</span>
+      <button type="button" class="lightbox-nav-btn" id="lightbox-next" aria-label="Next photograph">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- RECORD REFERENCE & REVERSE QR DIALOG -->
+  <div class="verify-dialog-backdrop" id="verify-dialog" role="dialog" aria-modal="true" aria-labelledby="verify-dialog-title">
+    <div class="verify-dialog-card">
+      <button type="button" class="verify-dialog-close" id="verify-dialog-close" aria-label="Close record reference">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="verify-dialog-eyebrow">PHYSICAL MEDAL &amp; RECORD REFERENCE</div>
+      <h3 class="verify-dialog-title" id="verify-dialog-title">HAS-2026-0001</h3>
+
+      <div class="verify-medal-pair">
+        <div class="verify-medal-face">
+          <img src="assets/images/has-gold-medal.svg" alt="Official HAS Gold Medal front" width="120" height="144">
+          <span>MEDAL FRONT</span>
+        </div>
+        <div class="verify-medal-face">
+          <img src="assets/images/has-gold-medal-reverse.svg" alt="Official HAS Gold Medal reverse with engraved QR code" width="120" height="144">
+          <span>REVERSE &amp; QR</span>
+        </div>
+      </div>
+
+      <p class="verify-dialog-note">
+        The permanent QR code engraved on the reverse of Arya Dinar's physical gold medal resolves directly to this digital certificate URL (<span class="verify-mono">HAS-2026-0001</span>).
+      </p>
+
+      <dl class="verify-dialog-meta">
+        <div>
+          <dt>Organization</dt>
+          <dd>Harare Amateur Swimming (HAS)</dd>
+        </div>
+        <div>
+          <dt>Timing Method</dt>
+          <dd>Certified Electronic Touch Pad · Official Record</dd>
+        </div>
+      </dl>
+
+      <div class="verify-dialog-actions">
+        <button type="button" class="btn-cert-discreet is-primary" id="btn-copy-record-link">COPY RECORD LINK</button>
+        <button type="button" class="btn-cert-discreet" id="btn-print-certificate">PRINT CERTIFICATE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST FEEDBACK -->
+  <div class="vault-toast" id="vault-toast" role="status" aria-live="polite">
+    CERTIFICATE LINK COPIED
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "HAS Digital Medal Vault",
+  "description": "Arya Dinar's official personal digital medal vault for Harare Amateur Swimming (HAS) 2026–2027 Season Gold Medal in the 50m Freestyle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
