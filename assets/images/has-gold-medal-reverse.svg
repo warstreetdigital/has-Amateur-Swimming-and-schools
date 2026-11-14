@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%" aria-label="Official HAS 2026 Gold Medal Reverse - Arya Dinar">
+  <defs>
+    <linearGradient id="revBezel" x1="80%" y1="90%" x2="20%" y2="10%">
+      <stop offset="0%" stop-color="#ffe89e" />
+      <stop offset="20%" stop-color="#D4AF37" />
+      <stop offset="45%" stop-color="#8F6A15" />
+      <stop offset="65%" stop-color="#F3DC7C" />
+      <stop offset="85%" stop-color="#AA821C" />
+      <stop offset="100%" stop-color="#5E430B" />
+    </linearGradient>
+
+    <radialGradient id="revCenter" cx="45%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#ebd07d" />
+      <stop offset="60%" stop-color="#b68820" />
+      <stop offset="100%" stop-color="#523705" />
+    </radialGradient>
+
+    <linearGradient id="engraveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1b02" />
+      <stop offset="100%" stop-color="#5a3d07" />
+    </linearGradient>
+
+    <filter id="revShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.75" />
+    </filter>
+
+    <filter id="engraveFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0.5" dy="0.8" stdDeviation="0.4" flood-color="#fff5cc" flood-opacity="0.7" />
+      <feDropShadow dx="-0.5" dy="-0.6" stdDeviation="0.4" flood-color="#1f1402" flood-opacity="0.9" />
+    </filter>
+  </defs>
+
+  <!-- Medal Disc (Reverse) -->
+  <g class="medal-disc-reverse" filter="url(#revShadow)" transform="translate(0, 10)">
+    <!-- Outer Beveled Rim -->
+    <circle cx="200" cy="280" r="150" fill="url(#revBezel)" />
+    <circle cx="200" cy="280" r="144" fill="none" stroke="#68470a" stroke-width="1.5" />
+    <circle cx="200" cy="280" r="142" fill="none" stroke="#ffe794" stroke-width="1" />
+    
+    <!-- Recessed Brushed Base -->
+    <circle cx="200" cy="280" r="126" fill="url(#revCenter)" />
+    <circle cx="200" cy="280" r="122" fill="none" stroke="#ffe899" stroke-width="0.75" opacity="0.6" />
+
+    <!-- Circular Top Engraving -->
+    <text x="200" y="196" font-family="'Inter', -apple-system, sans-serif" font-size="8.5" font-weight="800" fill="url(#engraveGrad)" letter-spacing="2.2" text-anchor="middle" filter="url(#engraveFilter)">
+      HARARE AMATEUR SWIMMING (HAS)
+    </text>
+
+    <!-- Engraved QR Plate Area -->
+    <rect x="156" y="212" width="88" height="88" rx="8" fill="#141008" stroke="#ffe48c" stroke-width="1.2" />
+    
+    <!-- Stylized micro-etched QR code -->
+    <!-- QR Corner 1 -->
+    <rect x="166" y="222" width="22" height="22" rx="2" fill="#e8c764" />
+    <rect x="170" y="226" width="14" height="14" rx="1" fill="#141008" />
+    <rect x="173" y="229" width="8" height="8" fill="#e8c764" />
+    <!-- QR Corner 2 -->
+    <rect x="212" y="222" width="22" height="22" rx="2" fill="#e8c764" />
+    <rect x="216" y="226" width="14" height="14" rx="1" fill="#141008" />
+    <rect x="219" y="229" width="8" height="8" fill="#e8c764" />
+    <!-- QR Corner 3 -->
+    <rect x="166" y="268" width="22" height="22" rx="2" fill="#e8c764" />
+    <rect x="170" y="272" width="14" height="14" rx="1" fill="#141008" />
+    <rect x="173" y="275" width="8" height="8" fill="#e8c764" />
+    <!-- QR Data Matrix Dots -->
+    <rect x="194" y="222" width="5" height="5" fill="#e8c764" />
+    <rect x="202" y="224" width="5" height="5" fill="#e8c764" />
+    <rect x="194" y="232" width="5" height="5" fill="#e8c764" />
+    <rect x="202" y="238" width="5" height="5" fill="#e8c764" />
+    <rect x="190" y="246" width="6" height="6" fill="#e8c764" />
+    <rect x="200" y="248" width="6" height="6" fill="#e8c764" />
+    <rect x="210" y="248" width="5" height="5" fill="#e8c764" />
+    <rect x="222" y="248" width="6" height="6" fill="#e8c764" />
+    <rect x="194" y="258" width="6" height="6" fill="#e8c764" />
+    <rect x="204" y="262" width="6" height="6" fill="#e8c764" />
+    <rect x="194" y="272" width="6" height="6" fill="#e8c764" />
+    <rect x="202" y="278" width="5" height="5" fill="#e8c764" />
+    <rect x="212" y="272" width="6" height="6" fill="#e8c764" />
+    <rect x="222" y="276" width="6" height="6" fill="#e8c764" />
+
+    <!-- Engraved Identification Details -->
+    <text x="200" y="322" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="900" fill="url(#engraveGrad)" letter-spacing="1.6" text-anchor="middle" filter="url(#engraveFilter)">
+      HAS-2026-0001
+    </text>
+
+    <text x="200" y="340" font-family="'Inter', -apple-system, sans-serif" font-size="9" font-weight="800" fill="url(#engraveGrad)" letter-spacing="2" text-anchor="middle" filter="url(#engraveFilter)">
+      ARYA DINAR
+    </text>
+
+    <text x="200" y="356" font-family="'Inter', -apple-system, sans-serif" font-size="7.5" font-weight="700" fill="url(#engraveGrad)" letter-spacing="1.4" text-anchor="middle" filter="url(#engraveFilter)">
+      50M FREESTYLE · 00:28.42
+    </text>
+  </g>
+</svg>

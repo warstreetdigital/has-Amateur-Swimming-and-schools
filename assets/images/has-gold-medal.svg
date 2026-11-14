@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%" aria-label="Official HAS 2026 Gold Medal - Arya Dinar">
+  <defs>
+    <!-- Ribbon Gradients -->
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#040b17" />
+      <stop offset="28%" stop-color="#0b1f3a" />
+      <stop offset="38%" stop-color="#C9A227" />
+      <stop offset="43%" stop-color="#f5e18a" />
+      <stop offset="48%" stop-color="#C9A227" />
+      <stop offset="52%" stop-color="#0b1f3a" />
+      <stop offset="57%" stop-color="#C9A227" />
+      <stop offset="62%" stop-color="#f5e18a" />
+      <stop offset="67%" stop-color="#C9A227" />
+      <stop offset="76%" stop-color="#0b1f3a" />
+      <stop offset="100%" stop-color="#040b17" />
+    </linearGradient>
+
+    <!-- Metal Gradients -->
+    <linearGradient id="metalBezel" x1="20%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#ffe89e" />
+      <stop offset="20%" stop-color="#D4AF37" />
+      <stop offset="45%" stop-color="#8F6A15" />
+      <stop offset="65%" stop-color="#F3DC7C" />
+      <stop offset="85%" stop-color="#AA821C" />
+      <stop offset="100%" stop-color="#5E430B" />
+    </linearGradient>
+
+    <linearGradient id="metalInnerRim" x1="85%" y1="90%" x2="15%" y2="10%">
+      <stop offset="0%" stop-color="#fff2b8" />
+      <stop offset="25%" stop-color="#d4af37" />
+      <stop offset="50%" stop-color="#694c0a" />
+      <stop offset="75%" stop-color="#ffd566" />
+      <stop offset="100%" stop-color="#916a12" />
+    </linearGradient>
+
+    <radialGradient id="metalCenterFace" cx="42%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#fff5cc" />
+      <stop offset="25%" stop-color="#ecd075" />
+      <stop offset="55%" stop-color="#c59828" />
+      <stop offset="85%" stop-color="#8a6312" />
+      <stop offset="100%" stop-color="#553a06" />
+    </radialGradient>
+
+    <linearGradient id="embossGold" x1="30%" y1="20%" x2="70%" y2="80%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#fed668" />
+      <stop offset="70%" stop-color="#885f0e" />
+      <stop offset="100%" stop-color="#462f05" />
+    </linearGradient>
+
+    <linearGradient id="reliefShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3d2803" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1b1201" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Specular Light Sweep Overlay -->
+    <linearGradient id="specularSweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="42%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.55" />
+      <stop offset="58%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Filters for Tactile Depth -->
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.75" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <filter id="emboss3D" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0.8" dy="1.4" stdDeviation="0.8" flood-color="#3b2603" flood-opacity="0.85" />
+      <feDropShadow dx="-0.8" dy="-1" stdDeviation="0.6" flood-color="#fff6cc" flood-opacity="0.9" />
+    </filter>
+
+    <!-- Circular text paths -->
+    <path id="topTextArc" d="M 92,275 A 108,108 0 0,1 308,275" fill="none" />
+    <path id="bottomTextArc" d="M 308,285 A 108,108 0 0,1 92,285" fill="none" />
+  </defs>
+
+  <!-- RIBBON -->
+  <g class="medal-ribbon" opacity="0.96">
+    <!-- Main folded neck ribbon -->
+    <path d="M 152,0 L 200,68 L 248,0 L 226,0 L 200,38 L 174,0 Z" fill="url(#ribbonGrad)" />
+    <path d="M 166,0 L 200,56 L 234,0 Z" fill="#071426" opacity="0.6" />
+    <polygon points="172,0 200,48 228,0 216,0 200,28 184,0" fill="url(#ribbonGrad)" />
+    <!-- Ribbon Loop Ring Mount -->
+    <rect x="184" y="60" width="32" height="12" rx="4" fill="url(#metalBezel)" filter="url(#dropShadow)" />
+    <rect x="187" y="62" width="26" height="8" rx="2" fill="#5e430b" />
+    <circle cx="200" cy="80" r="14" fill="none" stroke="url(#metalBezel)" stroke-width="6" />
+  </g>
+
+  <!-- MEDAL BODY -->
+  <g class="medal-disc" filter="url(#dropShadow)" transform="translate(0, 10)">
+    <!-- Outer Chamfer Bezel -->
+    <circle cx="200" cy="280" r="150" fill="url(#metalBezel)" />
+
+    <!-- Rim Micro-Texture Ridges -->
+    <circle cx="200" cy="280" r="146" fill="none" stroke="#68470a" stroke-width="1" opacity="0.7" />
+    <circle cx="200" cy="280" r="144" fill="none" stroke="#ffe794" stroke-width="1" opacity="0.85" />
+    <circle cx="200" cy="280" r="140" fill="none" stroke="#8a6111" stroke-width="2" />
+    <circle cx="200" cy="280" r="136" fill="url(#metalInnerRim)" />
+
+    <!-- Recessed Stepped Face -->
+    <circle cx="200" cy="280" r="126" fill="url(#metalCenterFace)" />
+
+    <!-- Concentric Brushed Ring Accents -->
+    <circle cx="200" cy="280" r="122" fill="none" stroke="#ffe899" stroke-width="0.75" opacity="0.6" />
+    <circle cx="200" cy="280" r="96" fill="none" stroke="#7e570c" stroke-width="1.2" opacity="0.7" />
+    <circle cx="200" cy="280" r="94" fill="none" stroke="#fff1b0" stroke-width="0.75" opacity="0.8" />
+
+    <!-- EMBOSSED RIM TEXT -->
+    <text font-family="'Inter', -apple-system, sans-serif" font-size="10" font-weight="800" fill="url(#embossGold)" letter-spacing="2.6" filter="url(#emboss3D)">
+      <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
+        HARARE AMATEUR SWIMMING
+      </textPath>
+    </text>
+
+    <text font-family="'Inter', -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="url(#embossGold)" letter-spacing="2.8" filter="url(#emboss3D)">
+      <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">
+        HAS CHAMPIONSHIPS · 2026–27
+      </textPath>
+    </text>
+
+    <!-- Tiny Star Separators -->
+    <polygon points="87,278 89,282 94,282 90,285 91,289 87,286 83,289 84,285 80,282 85,282" fill="url(#embossGold)" filter="url(#emboss3D)" />
+    <polygon points="313,278 315,282 320,282 316,285 317,289 313,286 309,289 310,285 306,282 311,282" fill="url(#embossGold)" filter="url(#emboss3D)" />
+
+    <!-- CENTRAL INNER EMBLEM -->
+    <g class="inner-crest" filter="url(#emboss3D)">
+      <!-- Laurel Wreath Left -->
+      <path d="M 148,278 C 146,252 160,230 178,222 C 172,228 168,238 168,248 C 162,254 158,264 158,274 C 158,284 164,296 172,302 C 160,296 150,288 148,278 Z" fill="url(#embossGold)" />
+      <!-- Laurel Leaves Details Left -->
+      <ellipse cx="156" cy="245" rx="5" ry="9" transform="rotate(-30 156 245)" fill="url(#embossGold)" />
+      <ellipse cx="151" cy="264" rx="5" ry="9" transform="rotate(-15 151 264)" fill="url(#embossGold)" />
+      <ellipse cx="154" cy="285" rx="5" ry="9" transform="rotate(15 154 285)" fill="url(#embossGold)" />
+      <ellipse cx="166" cy="302" rx="5" ry="8" transform="rotate(40 166 302)" fill="url(#embossGold)" />
+
+      <!-- Laurel Wreath Right -->
+      <path d="M 252,278 C 254,252 240,230 222,222 C 228,228 232,238 232,248 C 238,254 242,264 242,274 C 242,284 236,296 228,302 C 240,296 250,288 252,278 Z" fill="url(#embossGold)" />
+      <!-- Laurel Leaves Details Right -->
+      <ellipse cx="244" cy="245" rx="5" ry="9" transform="rotate(30 244 245)" fill="url(#embossGold)" />
+      <ellipse cx="249" cy="264" rx="5" ry="9" transform="rotate(15 249 264)" fill="url(#embossGold)" />
+      <ellipse cx="246" cy="285" rx="5" ry="9" transform="rotate(-15 246 285)" fill="url(#embossGold)" />
+      <ellipse cx="234" cy="302" rx="5" ry="8" transform="rotate(-40 234 302)" fill="url(#embossGold)" />
+
+      <!-- HAS Winged Monogram & Swimmer Wave Crest -->
+      <!-- Dynamic stylized aquatic waves -->
+      <path d="M 166,282 Q 182,272 200,282 Q 218,292 234,282 Q 220,298 200,296 Q 180,298 166,282 Z" fill="url(#embossGold)" />
+      <path d="M 172,294 Q 186,288 200,294 Q 214,300 228,294 Q 214,306 200,305 Q 186,306 172,294 Z" fill="url(#embossGold)" opacity="0.8" />
+
+      <!-- Powerful Swimmer Silhouette in Stroke -->
+      <!-- Swimmer Torso & Arm Reach -->
+      <path d="M 182,254 C 187,248 195,245 204,248 L 222,238 C 224,237 227,240 225,243 L 210,256 C 213,259 214,264 212,268 L 198,272 C 193,273 186,270 184,265 Z" fill="url(#embossGold)" />
+      <!-- Swimmer Head with Cap -->
+      <circle cx="197" cy="246" r="6.5" fill="url(#embossGold)" />
+
+      <!-- HAS Monogram Typography in Center -->
+      <text x="200" y="233" font-family="'Inter', -apple-system, sans-serif" font-size="18" font-weight="900" fill="url(#embossGold)" letter-spacing="4" text-anchor="middle">
+        HAS
+      </text>
+
+      <!-- Event & Placement Engraved Plate -->
+      <rect x="162" y="312" width="76" height="15" rx="3" fill="#583b05" stroke="#ffe58f" stroke-width="0.8" opacity="0.85" />
+      <text x="200" y="323" font-family="'Inter', -apple-system, sans-serif" font-size="8.5" font-weight="800" fill="#fff5d0" letter-spacing="1.8" text-anchor="middle">
+        50M FREESTYLE
+      </text>
+    </g>
+
+    <!-- Dynamic Curved Specular Glint Reflection Highlight -->
+    <ellipse cx="170" cy="225" rx="100" ry="60" transform="rotate(-32 170 225)" fill="url(#specularSweep)" pointer-events="none" />
+    <circle cx="200" cy="280" r="148" fill="url(#specularSweep)" pointer-events="none" />
+  </g>
+</svg>
